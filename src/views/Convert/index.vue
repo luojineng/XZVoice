@@ -7,7 +7,7 @@
 				type="textarea"
 				placeholder="请输入内容"
 				v-model="convertText"
-				maxlength="3000"
+				maxlength="8000"
 				spellcheck="false"
 				resize="none"
 				show-word-limit
