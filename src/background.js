@@ -46,14 +46,14 @@ if (!gotTheLock) {
 
 		if (process.env.WEBPACK_DEV_SERVER_URL) {
 			await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL);
-			win.setTitle('吾爱破解（作者：bawangxx）')
+			win.setTitle('配音专家（作者：luojineng）')
 			if (!process.env.IS_TEST) win.webContents.openDevTools();
 		} else {
 			//正式环境设置
 			Menu.setApplicationMenu(null); // 移除顶部菜单
 			createProtocol("app");
 			await win.loadURL("app://./index.html");
-			win.setTitle('吾爱破解（作者：bawangxx）');
+			win.setTitle('配音专家（作者：luojineng）');
 			autoUpdater.checkForUpdatesAndNotify();
 		}
 	}
