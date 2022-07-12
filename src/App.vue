@@ -84,7 +84,7 @@ export default {
 					this.$refs.updateDialogRef.showDialog(null);
 					break;
 				case "#buy":
-					shell.openExternal("https://github.com/bawangxx/XZVoice");
+					shell.openExternal("https://github.com/luojineng/XZVoice");
 					break;
 				case "#shopCollect":
 					this.$router.push('/');
